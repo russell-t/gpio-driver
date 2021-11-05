@@ -1,5 +1,5 @@
 # gpio-driver
-A Linux kernel driver for the Raspberry Pi. Allows user to toggle GPIO pins on/off by writing to a file in /proc/.
+A Linux kernel driver for the Raspberry Pi. Allows user to toggle GPIO pins on/off by writing to a file in /proc/. This was written following this tutorial https://youtu.be/lWzFFusYg6g. I wrote this up for future reference.
 ### Instructions
 Run 
 ```
@@ -17,3 +17,14 @@ The LED should light up. If you run
 echo "21,0" > /proc/lll-gpio
 ```
 it should turn off.
+
+You can also try 
+```
+dmesg | grep "Data buffer"
+```
+to check that it's working.
+
+To remove the driver, run
+```
+sudo rmmod lll-gpio
+```
