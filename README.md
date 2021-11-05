@@ -26,5 +26,5 @@ to check that it's working.
 
 To remove the driver, run
 ```
-sudo rmmod lll-gpio
+sudo rmmod lll_gpio_driver
 ```
